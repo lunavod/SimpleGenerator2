@@ -1,0 +1,54 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/warnings"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "modules": true
+    },
+    "modules": true,
+    "experimentalObjectRestSpread": true,
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [],
+  "rules": {
+    "indent": [
+      "error",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "no-console": "off",
+    "max-len": [
+      2,
+      120
+    ]
+  },
+  "parser": "babel-eslint",
+  "settings": {
+    "import/parser": "babel-eslint",
+    "import/resolve": {
+      "moduleDirectory": [
+        "node_modules",
+        "src"
+      ]
+    }
+  },
+  "globals": {}
+}

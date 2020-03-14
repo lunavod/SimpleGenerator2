@@ -1,0 +1,22 @@
+import React, {Fagment} from 'react'
+<% if (useBaobab) { %>import { useBranch } from 'baobab-react/hooks'<% } %>
+<% if (usePropTypes) { %>import PropTypes from 'prop-types'<% } %>
+<% if (useLodash) { %>import {  } from 'lodash'<% } %>
+
+import syles from "./styles.css"
+
+function <%= name %>() {
+    <%_ if (useBaobab) { -%>
+    const {  } = useBranch({
+        
+    })
+    <% } -%>
+
+    return <Fragment>Hello, <%= name %>!</Fragment>
+}
+
+<% if (usePropTypes) { -%>
+<%= name %>.propTypes = {
+
+}
+<% } -%>

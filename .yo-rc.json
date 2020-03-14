@@ -1,0 +1,9 @@
+{
+  "generator-codestyle": {
+    "codestyle": {
+      "indent": 4,
+      "semi": false,
+      "quotes": "single"
+    }
+  }
+}
